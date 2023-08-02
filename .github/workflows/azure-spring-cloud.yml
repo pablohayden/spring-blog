@@ -1,8 +1,5 @@
 name: AzureSpringBlogCloudBuild
-on: 
-  push:
-    branches:
-    - main
+on: push
 
 env:
   ASC_PACKAGE_PATH: ${{ github.workspace }}
