@@ -30,7 +30,7 @@ jobs:
       - name: Login via Azure CLI
         uses: azure/login@v1
         with:
-          creds: ${{ secrets.AZURE_CREDENTIALS }}
+          creds: ${{ secrets.AZURE_SPRING_BLOG_DEV_CREDENTIALS }}
 
       - name: deploy to production with artifact
         uses: azure/spring-cloud-deploy@v1
