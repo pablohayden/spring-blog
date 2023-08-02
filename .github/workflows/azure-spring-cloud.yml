@@ -1,4 +1,4 @@
-name: AzureSpringCloud
+name: AzureSpringBlogCloudBuild
 on: 
   push:
     branches:
