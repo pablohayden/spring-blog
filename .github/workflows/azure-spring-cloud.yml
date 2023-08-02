@@ -5,7 +5,9 @@ env:
   ASC_PACKAGE_PATH: ${{ github.workspace }}
   JAVA_VERSION: 17
   AZURE_SUBSCRIPTION: ea4defec-c3b2-4769-b70e-779f7e14c04e
-  APP_NAME: spring-blog
+  SERVICE_NAME: spring-blog-service
+  APP_NAME: spring-blog-app
+  
 
 jobs:
   deploy_to_development:
@@ -34,7 +36,7 @@ jobs:
         with:
           azure-subscription: ${{ env.AZURE_SUBSCRIPTION }}
           action: Deploy
-          service-name: ${{ env.APP_NAME }}
+          service-name: ${{ env.SERVICE_NAME }}
           app-name: ${{ env.APP_NAME }}
           use-staging-deployment: false
           package: ${{ env.ASC_PACKAGE_PATH }}/**/*.jar
